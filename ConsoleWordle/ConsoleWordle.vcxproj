@@ -144,6 +144,7 @@
     <ClCompile Include="WordsCollection.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="OutputHandler.h" />
     <ClInclude Include="WordsCollection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
