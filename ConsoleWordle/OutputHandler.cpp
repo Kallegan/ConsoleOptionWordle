@@ -10,18 +10,47 @@ void outputStrings(std::string s, int i, int color) //takes string, index and co
     int index{ i };
     int colorTemp = color;
 
-    if (i == 0)
-    {
-        std::cout << "|";
-    }
+    if (i == 0 )   //used to fill gap at start of index.
+        printSide();    
     
     std::cout << BACKGROUND(colorTemp, "[ ");
     std::cout << BACKGROUND(colorTemp, temp[i]);
     std::cout << BACKGROUND(colorTemp, " ]");
     std::cout << " ";
     
-    if (i == 4)
-    {
-        std::cout << "|";
-    }
+    
+    if (i == 4) 
+        printSide(); //fills endgap.
+}
+
+//moved stray strings to own functions to make "playfield" easier to edit and keep track of.
+
+void printHeadline()
+{
+    std::cout << " ______________________________  Games played: ";
+}
+
+void printSide() 
+{
+    std::cout << "|";
+}
+
+void printSides()
+{
+    std::cout << "|                              | ";
+}
+
+void printSidesEnd()
+{
+    std::cout << "|                              |  " << std::endl;
+}
+
+void printEndline()
+{
+    std::cout << "\n|______________________________|";
+}
+
+void victory()
+{
+    std::cout << "WINNER!";
 }

@@ -23,11 +23,11 @@ int gameLoop(int keepPlaying, int gamesPlayed)
     int backGreen{ 42 };
 
     system("CLS"); //clears the screen before next round starts.           
-    std::cout << " ______________________________  Games played: " << games << std::endl;    
+    printHeadline();
+    std::cout << games << std::endl;
     do
     {
-
-        std::cout << "|                              |  ";
+        printSides();
         std::cin >> userGuess;
         if (userGuess.length() != 5)
         {
@@ -72,25 +72,28 @@ int gameLoop(int keepPlaying, int gamesPlayed)
             canGuess = false;
         }
 
-
     } while (canGuess);
-    games++;
+
+
+    games++; //current game loop is at an end so games played is incremented. 
+
     if (correct)
     {
-        std::cout << "WINNER!";
+        victory();
     }
     else
     {
-        std::cout << "|                              |  " << std::endl;
+        printSidesEnd();   
 
         for (size_t i = 0; i < 5; i++)
         {
-            outputStrings(pickedRandom, i, backRed);            
+            outputStrings(pickedRandom, i, backRed);    
         }
-        std::cout << "\n|______________________________|";
+
+        printEndline();
     }
 
-    std::cout << "Press 1: to play again: ";
+    std::cout << "Submit 1 to play again: ";
     std::cin >> keepPlaying;
 
     return keepPlaying;
