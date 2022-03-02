@@ -2,11 +2,10 @@
 #include <fstream> //for reading the .txt
 #include <string> //used for getline in while loop.
 #include <vector>
-#include "WordsCollection.h"
+#include "wordsCollection.h"
 
 std::string getRandomWord() //used for checking the list of words, randomize a word and return it.
 {
-
 	srand((unsigned int)time(NULL)); //had to cast to unsigned int since I got memory leak warnings. 
 
 	std::string randomizedWord{};

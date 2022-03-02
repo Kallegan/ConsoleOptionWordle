@@ -18,18 +18,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="WordsCollection.cpp">
+    <ClCompile Include="wordsCollection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OutputHandler.cpp">
+    <ClCompile Include="outputHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gameLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="WordsCollection.h">
+    <ClInclude Include="wordsCollection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OutputHandler.h">
+    <ClInclude Include="outputHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameLoop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

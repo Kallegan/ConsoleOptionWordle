@@ -1,4 +1,4 @@
 #pragma once
 
 
-void printStuff(std::string s, int i, int color);
+void outputStrings(std::string s, int i, int color);

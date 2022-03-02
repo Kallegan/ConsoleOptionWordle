@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="OutputHandler.cpp" />
-    <ClCompile Include="WordsCollection.cpp" />
+    <ClCompile Include="outputHandler.cpp" />
+    <ClCompile Include="gameLoop.cpp" />
+    <ClCompile Include="wordsCollection.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="OutputHandler.h" />
-    <ClInclude Include="WordsCollection.h" />
+    <ClInclude Include="gameLoop.h" />
+    <ClInclude Include="outputHandler.h" />
+    <ClInclude Include="wordsCollection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
