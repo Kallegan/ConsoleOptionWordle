@@ -7,14 +7,14 @@
 void outputStrings(std::string s, int i, int color) //takes string, index and color for printing to console.
 {
     std::string temp{ s };
-    int index{ i };
+    int index{ i };    
     int colorTemp = color;
 
     if (i == 0 )   //used to fill gap at start of index.
         printSide();    
     
     std::cout << BACKGROUND(colorTemp, "[ ");
-    std::cout << BACKGROUND(colorTemp, temp[i]);
+    std::cout << BACKGROUND(colorTemp, temp[index]);
     std::cout << BACKGROUND(colorTemp, " ]");
     std::cout << " ";
     

@@ -22,7 +22,7 @@ int gameLoop(int keepPlaying, int gamesPlayed)
     int backRed{ 41 };
     int backGreen{ 42 };
 
-    system("CLS"); //clears the screen before next round starts.           
+    //system("CLS"); //clears the screen before next round starts.           
     printHeadline();
     std::cout << games << std::endl;
     do
@@ -87,7 +87,9 @@ int gameLoop(int keepPlaying, int gamesPlayed)
 
         for (size_t i = 0; i < 5; i++)
         {
-            outputStrings(pickedRandom, i, backRed);    
+            
+            outputStrings(pickedRandom, i, backRed);           
+            
         }
 
         printEndline();

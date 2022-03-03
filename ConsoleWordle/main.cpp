@@ -1,4 +1,6 @@
 #include "gameLoop.h"
+#include <iostream>
+
 
 int main() //tried to keep main as clean as possible. 
 {   
@@ -6,10 +8,10 @@ int main() //tried to keep main as clean as possible.
     int gamesPlayed{};    
 
     do
-    {      
+    {         
         keepPlaying = gameLoop(keepPlaying, gamesPlayed);
-        gamesPlayed++;        
-
+        gamesPlayed++;     
+        
     } while (keepPlaying == 1);
 
     return 0;
