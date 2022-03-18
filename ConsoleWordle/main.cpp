@@ -2,17 +2,18 @@
 #include <iostream>
 
 
-int main() //tried to keep main as clean as possible. 
-{   
-    int keepPlaying{1};
-    int gamesPlayed{};    
-
+int main()
+{
+    bool keepPlaying{true};
     do
-    {         
-        keepPlaying = gameLoop(keepPlaying, gamesPlayed);
-        gamesPlayed++;     
-        
-    } while (keepPlaying == 1);
+    {       
+        keepPlaying = gameLoop();
 
-    return 0;
+        std::cout << "after gameloop";
+
+    } while (keepPlaying);     
+   
+
+    return 0; 
 }
+

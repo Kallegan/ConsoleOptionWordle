@@ -1,3 +1,7 @@
 #pragma once
+#include <iostream>
+#include "inputHandler.h"
+#include "wordleBoard.h"
+#include "gameScore.h"
 
-int gameLoop(int keepPlaying, int gamesPlayed);
+bool gameLoop();

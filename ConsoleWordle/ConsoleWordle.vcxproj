@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,15 +140,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gameScore.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="wordleBoard.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="outputHandler.cpp" />
     <ClCompile Include="gameLoop.cpp" />
-    <ClCompile Include="wordsCollection.cpp" />
+    <ClCompile Include="inputHandler.cpp" />
+    <ClCompile Include="wordCollection.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="gameScore.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="wordleBoard.h" />
     <ClInclude Include="gameLoop.h" />
-    <ClInclude Include="outputHandler.h" />
-    <ClInclude Include="wordsCollection.h" />
+    <ClInclude Include="inputHandler.h" />
+    <ClInclude Include="wordCollection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
