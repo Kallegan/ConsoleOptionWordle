@@ -11,6 +11,14 @@ std::string getRandomWord() //todo: convert to constructor and make a function t
 	//I think it works this way since the deque doesn't have to move around and keep the index connected in memory like the some other containers.
 	//If I wanted to search the container if the guessed word is in the deck I would switch to a vector since indexing is much faster.
 	
+	// feedback: inserting to deque is faster usually because it is based on linked list-like structure, so no reallocations are done when inserting/deleting
+	// elements(as opposed to vector). However it needs to iterate whole container of you want to access random element. That is why it is slower in that.
+	// As for justification of usage of deque for this particular case - not sure if minimizing the time for filling up the container was a goal here(to be honest,
+	// its not really stated in the assignment description). I'd say minimizing the time needed for word lookup to check if player inputs a correct world would be
+	// a more suitable goal.
+	// Also seems like its not too efficient to reload the file and populate your container every time you want a random  word. You could load it once,
+	// and then just pick the word from container in memory.
+
 	static std::deque<std::string> s_words;
 
 	if (s_words.size() == 0)
