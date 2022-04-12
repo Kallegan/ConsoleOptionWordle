@@ -2,7 +2,7 @@
 
 bool gameLoop()
 {  
-    GameScore static s_gameScore;    
+    GameScore static s_gameScore;    // feedback: I'd rather move those variables outside main loop, maybe created in the main.cpp or combined in a singletone Game class.
     InputHandler iHandler;   
     WordleBoard drawBoard;   
 
