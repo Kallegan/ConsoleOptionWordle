@@ -14,7 +14,11 @@ public:
     std::string totalRandom{}; 
 
     char continueGame{};
-    bool isWinner{};
+    bool isWinner{}; // feedback: feels like this member doesn't really belong to input handling as this class is named for.
+                    // Generally good practice for writing classes is that class should serve one task and deal with a clearly separable
+                    // data of your project. This class is named input handler but seems like it handles many things including
+                    // state of the game, merging some strings etc. Ideally if you name your class input handler, it should only 
+                    // take care of handling the input.
     
     void takeUserGuess();
 

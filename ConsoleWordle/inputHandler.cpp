@@ -32,7 +32,8 @@
     //merging string with its current self. This will keep track of all total guesses.
     void InputHandler::mergeGuesses()
     {
-        totalGuesses += userGuess;               
+        totalGuesses += userGuess;        // feedback: an interesting way of storing the strings! I wonder if there is a reason for selecting appending of strings
+                                          // instead of just having a vector of strings for each line as guess word?
     }   
     //exapnding the size of the random with itself. Used to match the index with guess as the string grows.
     void InputHandler::expandRandom()
