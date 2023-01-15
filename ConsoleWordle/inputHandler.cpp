@@ -55,8 +55,8 @@
     {
         if (userGuess == pickedRandom)
         {
-            return true;
             isWinner = true;
+            return true;           
         }
         else if (round == 6)
         {
